@@ -1,2 +1,20 @@
 class Ship
+  @@all = Array.new
+
+  attr_accessor :name, :type, :booty
+
+  def initalize(name,type,booty)
+      @name = name
+      @type = type
+      @booty = booty
+      @@all << self
+  end
+
+  def self.all
+    @@all
+  end
+
+  def self.clear
+    @@all.clear
+  end
 end

@@ -3,7 +3,7 @@ require './environment'
 module FormsLab
   class App < Sinatra::Base
     get '/' do
-         erb :root
+         erb :index
        end
 
        get '/new' do

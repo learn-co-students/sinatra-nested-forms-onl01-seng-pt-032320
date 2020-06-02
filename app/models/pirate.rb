@@ -1,12 +1,12 @@
 class Pirate
     @@all = Array.new
 
-    attr_accessor :name, :weight, :height
+    attr_reader :name, :weight, :height
 
-    def initiialize(name,weight,height)
-        @name = name
-        @weight = weight
-        @height = height
+    def initiialize(params)
+        @name = params[:name]
+        @weight = params[:weight]
+        @height = params[:height]
         @@all << self
     end
 

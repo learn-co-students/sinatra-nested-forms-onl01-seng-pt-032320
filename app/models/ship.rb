@@ -1,12 +1,14 @@
 class Ship
+
+
+  attr_reader :name, :type, :booty
+
   @@all = Array.new
 
-  attr_accessor :name, :type, :booty
-
-  def initialize(name,type,booty)
-      @name = name
-      @type = type
-      @booty = booty
+  def initialize(params)
+      @name = params[:name]
+      @type = params[:type]
+      @booty = params[:booty]
       @@all << self
   end
 

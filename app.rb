@@ -4,13 +4,14 @@ module FormsLab
   class App < Sinatra::Base
 
     get '/' do
-      erb :new
+      erb :'pirates/new'
     end
 
     
 
     post '/pirate' do
       @pirate = Pirate.new(params[:name], params[:weight], params[:height])
+      erb :'pirates/show'
     end
 
   end

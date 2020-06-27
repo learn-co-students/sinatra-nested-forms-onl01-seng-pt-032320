@@ -1,6 +1,6 @@
 <h1>Welcome to the Nested Forms Lab!</h1>
 <h1>Make your form here</h1>
-<form action="/pirates" method="post">
+<form action="/pirates" method="POST">
     <label for="name">Pirate Name</label>
     <input type="text" name="pirate[name]">
 
@@ -28,6 +28,6 @@
     <label for="2nd ship booty">2nd Ship Booty</label>
     <input type="text" id="ship_booty_2" name="pirate[ships][][booty]">
 
-    <input type="submit">
+    <button type="submit">Submit</button>
 
 </form>

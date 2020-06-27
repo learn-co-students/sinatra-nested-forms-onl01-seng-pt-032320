@@ -15,9 +15,7 @@ class Ship
     end
 
     def self.clear
-        @@all.each do |t|
-            t.delete
-        end
+        @@all.clear
     end
     
 end

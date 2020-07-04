@@ -1,2 +1,2 @@
-class Ship
+class Ship 
 end

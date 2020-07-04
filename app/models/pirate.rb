@@ -1,2 +1,2 @@
-class Pirate
+class Pirate < ApplicationRecord
 end
